@@ -1,0 +1,7 @@
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\MvcAzure.exe
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\MvcAzure.dll
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\MvcAzure.deps.json
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\MvcAzure.runtimeconfig.json
+C:\GitHub\MvcAzure\obj\Release\net6.0\PubTmp\Out\MvcAzure.pdb
