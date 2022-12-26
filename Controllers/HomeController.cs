@@ -21,15 +21,23 @@ public class HomeController : Controller
     }
 
     [HttpGet]
-    [Authorize]
-    [AuthorizeForScopes(ScopeKeySection = "DownstreamApi:Scopes")]
     public async Task<IActionResult> Index()
     {
+        var teste = Request.Headers;
         var user = await _graphServiceClient.Me.Request().GetAsync();
         ViewData["ApiResult"] = user.DisplayName;
         return View();
     }
 
+    [HttpPost]
+    public async void post([FromBody] Pessoa pessoa)
+    {
+        var teste = Request.Headers;
+        var user = await _graphServiceClient.Me.Request().GetAsync();
+    }
+
+    [Authorize]
+    [AuthorizeForScopes(ScopeKeySection = "DownstreamApi:Scopes")]
     public IActionResult Privacy()
     {
         return View();
@@ -40,4 +48,8 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+}
+public class Pessoa
+{
+    public string Id_Token { get; set; }
 }
